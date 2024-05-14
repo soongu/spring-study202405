@@ -1,6 +1,8 @@
-package com.study.springstudy.webservlet.chap02.v1.controller;
+package com.study.springstudy.webservlet.chap02.v2.controller;
 
 import com.study.springstudy.webservlet.MemberMemoryRepo;
+import com.study.springstudy.webservlet.View;
+import com.study.springstudy.webservlet.chap02.v1.controller.ControllerV1;
 import com.study.springstudy.webservlet.entity.Member;
 
 import javax.servlet.RequestDispatcher;
@@ -10,20 +12,16 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-public class ShowController implements ControllerV1 {
+public class ShowController implements ControllerV2 {
 
     private MemberMemoryRepo repo = MemberMemoryRepo.getInstance();
 
     @Override
-    public void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public View process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         List<Member> memberList = repo.findAll();
-
         request.setAttribute("memberList", memberList);
 
-        String viewName = "/WEB-INF/views/m-list.jsp";
-
-        RequestDispatcher dp = request.getRequestDispatcher(viewName);
-        dp.forward(request, response);
+        return new View("v2/m-list");
     }
 }
