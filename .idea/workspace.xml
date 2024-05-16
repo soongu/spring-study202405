@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="프론트 컨트롤러 패턴 part5">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap01/BasicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap01/OrderDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v5/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/v5/detail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/v5/m-list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/v5/reg_form.jsp" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="spring mvc 요청처리 1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap01/ResponseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap02/CoffeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap02/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mvc/coffee-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mvc/coffee-result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mvc/hobbies.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mvc/s-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mvc/s-result.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/v4/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/v4/detail.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715820965752</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="spring mvc 요청처리 1">
+      <option name="closed" value="true" />
+      <created>1715824659140</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715824659140</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,6 +317,7 @@
     <MESSAGE value="프론트 컨트롤러 패턴 part3" />
     <MESSAGE value="프론트 컨트롤러 패턴 part4" />
     <MESSAGE value="프론트 컨트롤러 패턴 part5" />
-    <option name="LAST_COMMIT_MESSAGE" value="프론트 컨트롤러 패턴 part5" />
+    <MESSAGE value="spring mvc 요청처리 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring mvc 요청처리 1" />
   </component>
 </project>
