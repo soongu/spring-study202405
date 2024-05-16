@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="spring mvc 요청처리 1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap01/ResponseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap02/CoffeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap02/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mvc/coffee-form.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mvc/coffee-result.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mvc/hobbies.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mvc/s-form.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/mvc/s-result.jsp" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="spring mvc 요청처리 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/controller/ScoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/dto/ScorePostDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/entity/Grade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/entity/Score.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/repository/ScoreJdbcRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/repository/ScoreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/score/score-list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,12 +79,16 @@
         <option value="jsp template" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.3.26/539e1d03decbec523b7ad87fb786fd0b1cf29ce/spring-webmvc-5.3.26.jar!/org/springframework/web/servlet/HandlerMapping.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -121,6 +125,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.study.springstudy.springmvc.chap03.entity" />
       <recent name="com.study.springstudy.chap02" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -296,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715824659140</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="spring mvc 요청처리 2">
+      <option name="closed" value="true" />
+      <created>1715831168444</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715831168444</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -318,6 +331,7 @@
     <MESSAGE value="프론트 컨트롤러 패턴 part4" />
     <MESSAGE value="프론트 컨트롤러 패턴 part5" />
     <MESSAGE value="spring mvc 요청처리 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring mvc 요청처리 1" />
+    <MESSAGE value="spring mvc 요청처리 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring mvc 요청처리 2" />
   </component>
 </project>
