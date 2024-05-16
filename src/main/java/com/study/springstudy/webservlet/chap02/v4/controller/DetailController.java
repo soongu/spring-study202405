@@ -2,25 +2,27 @@ package com.study.springstudy.webservlet.chap02.v4.controller;
 
 import com.study.springstudy.webservlet.MemberMemoryRepo;
 import com.study.springstudy.webservlet.Model;
-import com.study.springstudy.webservlet.ModelAndView;
 import com.study.springstudy.webservlet.entity.Member;
 
 import java.util.Map;
 
-public class SaveController implements ControllerV4 {
+public class DetailController implements ControllerV4 {
 
     private MemberMemoryRepo repo = MemberMemoryRepo.getInstance();
 
     @Override
     public String process(Map<String, String> paramMap, Model model) {
+
+        // 1. 상세조회할 멤버의 account를 읽음
         String account = paramMap.get("account");
-        String password = paramMap.get("password");
-        String userName = paramMap.get("userName");
 
-        Member member = new Member(account, password, userName);
+        // 2. 저장소에서 상세조회할 멤버의 객체를 가져옴
+        Member member = repo.findOne(account);
 
-        repo.save(member);
+        // 3. 상세조회할 페이지(JSP)에게 멤버정보를 보내줌
+        model.addAttribute("mem", member);
 
-        return "redirect:/chap02/v4/show";
+        // 4. 상세조회 페이지로 이동
+        return "v4/detail";
     }
 }
