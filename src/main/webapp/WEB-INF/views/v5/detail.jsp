@@ -16,7 +16,7 @@
     <li># 이름: ${mem.userName}</li>
   </ul>
 
-  <a href="/chap02/v5/show">목록으로 돌아가기</a>
+  <a href="/chap02/v4/show">목록으로 돌아가기</a>
 
 </body>
 </html>

@@ -8,15 +8,6 @@
 </head>
 <body>
 
-  <h1>회원 상세 조회</h1>
-
-  <ul>
-    <li># 계정명: ${mem.account}</li>
-    <li># 비밀번호: ${mem.password}</li>
-    <li># 이름: ${mem.userName}</li>
-  </ul>
-
-  <a href="/chap02/v5/show">목록으로 돌아가기</a>
-
+  <h1>Spring으로 포워딩한 jsp파일입니다!!</h1>
 </body>
 </html>
