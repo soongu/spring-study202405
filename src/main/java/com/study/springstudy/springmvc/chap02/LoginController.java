@@ -1,5 +1,8 @@
 package com.study.springstudy.springmvc.chap02;
 
+import com.study.springstudy.springmvc.chap03.repository.ScoreJdbcRepository;
+import com.study.springstudy.springmvc.chap03.repository.ScoreMemoryRepository;
+import com.study.springstudy.springmvc.chap03.repository.ScoreRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 @RequestMapping("/hw")
 public class LoginController {
+
+    private ScoreRepository repository = new ScoreJdbcRepository();
 
     /*
         1번요청: 로그인 폼 화면 열어주기
