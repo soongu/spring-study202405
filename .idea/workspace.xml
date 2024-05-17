@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="spring mvc - 성적관리앱 4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/database/chap01/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/database/chap01/SpringJdbc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/database/chap01/SpringJdbcTest.java" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="spring mvc - 스프링 JDBC">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/repository/ScoreSpringJdbcRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/repository/ScoreJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/repository/ScoreJdbcRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/study/springstudy/database/chap01/SpringJdbcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/database/chap01/SpringJdbcTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +73,8 @@
         <option value="jsp template" />
         <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -160,19 +158,16 @@
       <recent name="com.study.springstudy.webservlet.chap02.v2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SpringJdbcTest.findOneTest">
-    <configuration name="SpringJdbcTest.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springstudy.test" />
+  <component name="RunManager" selected="애플리케이션.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.Main" />
+      <module name="springstudy.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.study.springstudy.database.chap01.*" />
+          <option name="PATTERN" value="com.study.springstudy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.study.springstudy.database.chap01" />
-      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.database.chap01.SpringJdbcTest" />
-      <option name="METHOD_NAME" value="deleteTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -243,11 +238,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="JUnit.SpringJdbcTest.saveTest" />
         <item itemvalue="JUnit.SpringJdbcTest.findOneTest" />
         <item itemvalue="JUnit.SpringJdbcTest.findAllTest" />
-        <item itemvalue="JUnit.SpringJdbcTest.saveTest" />
         <item itemvalue="JUnit.SpringJdbcTest.modifyTest" />
-        <item itemvalue="JUnit.SpringJdbcTest.deleteTest" />
       </list>
     </recent_temporary>
   </component>
@@ -348,7 +343,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715911049313</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="spring mvc - 스프링 JDBC">
+      <option name="closed" value="true" />
+      <created>1715917620358</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715917620358</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -375,6 +378,7 @@
     <MESSAGE value="spring mvc - 성적관리앱 2" />
     <MESSAGE value="spring mvc - 성적관리앱 3" />
     <MESSAGE value="spring mvc - 성적관리앱 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring mvc - 성적관리앱 4" />
+    <MESSAGE value="spring mvc - 스프링 JDBC" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring mvc - 스프링 JDBC" />
   </component>
 </project>

@@ -2,11 +2,8 @@ package com.study.springstudy.springmvc.chap03.controller;
 
 import com.study.springstudy.springmvc.chap03.dto.ScorePostDto;
 import com.study.springstudy.springmvc.chap03.entity.Score;
-import com.study.springstudy.springmvc.chap03.repository.ScoreJdbcRepository;
-import com.study.springstudy.springmvc.chap03.repository.ScoreMemoryRepository;
 import com.study.springstudy.springmvc.chap03.repository.ScoreRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,9 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /*
     # 요청 URL
