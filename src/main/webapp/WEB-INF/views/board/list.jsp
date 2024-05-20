@@ -35,7 +35,7 @@
 
           <c:forEach var="b" items="${bList}">
             <div class="card-wrapper">
-              <section class="card" data-bno="1">
+              <section class="card" data-bno="${b.bno}">
                 <div class="card-title-wrapper">
                   <h2 class="card-title">${b.shortTitle}</h2>
                   <div class="time-view-wrapper">
@@ -54,7 +54,7 @@
                 </div>
               </section>
               <div class="card-btn-group">
-                <button class="del-btn" data-href="#">
+                <button class="del-btn" data-href="/board/delete?bno=${b.bno}">
                   <i class="fas fa-times"></i>
                 </button>
               </div>
@@ -95,7 +95,9 @@
             modal.style.display = 'flex'; // 모달 창 띄움
 
             const $delBtn = e.target.closest('.del-btn');
+            // 삭제 링크주소 얻기
             const deleteLocation = $delBtn.dataset.href;
+            console.log(deleteLocation);
 
             // 확인 버튼 이벤트
             confirmDelete.onclick = e => {
