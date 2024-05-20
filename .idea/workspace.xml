@@ -4,15 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="spring mvc - 스프링 JDBC 2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/controller/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/entity/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/repository/BoardRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/write.jsp" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="spring mvc - 게시판 앱 1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardWriteRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/repository/BoardRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/chap04/repository/BoardRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/entity/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/entity/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/MyModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/ModelAndView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/ModelAndView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/FrontControllerV4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/FrontControllerV4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/ControllerV4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/ControllerV4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/DeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/DeleteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/DetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/DetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/JoinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/JoinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/SaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/SaveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/ShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/ShowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/write.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +85,8 @@
       <list>
         <option value="jsp template" />
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -107,6 +116,9 @@
     "Gradle.HotelTest.hotelTest.executor": "Run",
     "Gradle.springstudy [:Main.main()].executor": "Run",
     "Gradle.springstudy [clean].executor": "Run",
+    "JUnit.BoardRepositoryImplTest.deleteTest.executor": "Run",
+    "JUnit.BoardRepositoryImplTest.findAll.executor": "Run",
+    "JUnit.BoardRepositoryImplTest.saveTest.executor": "Run",
     "JUnit.HotelSpringDITest.diTest.executor": "Run",
     "JUnit.PersonTest.test.executor": "Run",
     "JUnit.SpringJdbcTest.deleteTest.executor": "Run",
@@ -150,11 +162,11 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.study.springstudy.springmvc.chap04.repository" />
       <recent name="com.study.springstudy.database.chap01" />
       <recent name="com.study.springstudy.springmvc" />
       <recent name="com.study.springstudy.core.chap04" />
       <recent name="com.study.springstudy.chap03" />
-      <recent name="com.study.springstudy.chap01" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.study.springstudy.webservlet.chap02.v3.controller" />
@@ -176,49 +188,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringJdbcTest.findAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoardRepositoryImplTest.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springstudy.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.study.springstudy.database.chap01.*" />
+          <option name="PATTERN" value="com.study.springstudy.springmvc.chap04.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.study.springstudy.database.chap01" />
-      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.database.chap01.SpringJdbcTest" />
-      <option name="METHOD_NAME" value="findAllTest" />
+      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap04.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap04.repository.BoardRepositoryImplTest" />
+      <option name="METHOD_NAME" value="deleteTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringJdbcTest.findOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoardRepositoryImplTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springstudy.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.study.springstudy.database.chap01.*" />
+          <option name="PATTERN" value="com.study.springstudy.springmvc.chap04.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.study.springstudy.database.chap01" />
-      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.database.chap01.SpringJdbcTest" />
-      <option name="METHOD_NAME" value="findOneTest" />
+      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap04.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap04.repository.BoardRepositoryImplTest" />
+      <option name="METHOD_NAME" value="findAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringJdbcTest.modifyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoardRepositoryImplTest.saveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springstudy.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.study.springstudy.database.chap01.*" />
+          <option name="PATTERN" value="com.study.springstudy.springmvc.chap04.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.study.springstudy.database.chap01" />
-      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.database.chap01.SpringJdbcTest" />
-      <option name="METHOD_NAME" value="modifyTest" />
+      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap04.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap04.repository.BoardRepositoryImplTest" />
+      <option name="METHOD_NAME" value="saveTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -243,10 +255,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="JUnit.BoardRepositoryImplTest.deleteTest" />
+        <item itemvalue="JUnit.BoardRepositoryImplTest.findAll" />
+        <item itemvalue="JUnit.BoardRepositoryImplTest.saveTest" />
         <item itemvalue="JUnit.SpringJdbcTest.saveTest" />
-        <item itemvalue="JUnit.SpringJdbcTest.findOneTest" />
-        <item itemvalue="JUnit.SpringJdbcTest.findAllTest" />
-        <item itemvalue="JUnit.SpringJdbcTest.modifyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -363,7 +375,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715923939373</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="spring mvc - 게시판 앱 1">
+      <option name="closed" value="true" />
+      <created>1715925484960</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715925484960</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -392,6 +412,7 @@
     <MESSAGE value="spring mvc - 성적관리앱 4" />
     <MESSAGE value="spring mvc - 스프링 JDBC" />
     <MESSAGE value="spring mvc - 스프링 JDBC 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring mvc - 스프링 JDBC 2" />
+    <MESSAGE value="spring mvc - 게시판 앱 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring mvc - 게시판 앱 1" />
   </component>
 </project>
