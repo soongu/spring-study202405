@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="spring mvc - 게시판 앱 5">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/dto/ScoreListResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/마멜이.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="3 tier architecture - part1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/dto/ScoreDetailResponseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/controller/ScoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/controller/ScoreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/score/score-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/score/score-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/service/ScoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap03/service/ScoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/score/score-detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/score/score-detail.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -404,7 +402,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716173396677</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="3 tier architecture - part1">
+      <option name="closed" value="true" />
+      <created>1716177024022</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716177024022</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,6 +444,7 @@
     <MESSAGE value="spring mvc - 게시판 앱 3" />
     <MESSAGE value="spring mvc - 게시판 앱 4" />
     <MESSAGE value="spring mvc - 게시판 앱 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring mvc - 게시판 앱 5" />
+    <MESSAGE value="3 tier architecture - part1" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 tier architecture - part1" />
   </component>
 </project>
