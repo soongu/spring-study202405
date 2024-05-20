@@ -4,24 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="spring mvc - 게시판 앱 1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardWriteRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/repository/BoardRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/chap04/repository/BoardRepositoryImplTest.java" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="spring mvc - 게시판 앱 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardListResponseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/entity/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/entity/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/MyModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/ModelAndView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/ModelAndView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/FrontControllerV4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/FrontControllerV4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/ControllerV4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/ControllerV4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/DeleteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/DeleteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/DetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/DetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/JoinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/JoinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/SaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/SaveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/ShowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/webservlet/chap02/v4/controller/ShowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/write.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -383,7 +370,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715925484960</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="spring mvc - 게시판 앱 2">
+      <option name="closed" value="true" />
+      <created>1716166694453</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1716166694453</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -413,6 +408,7 @@
     <MESSAGE value="spring mvc - 스프링 JDBC" />
     <MESSAGE value="spring mvc - 스프링 JDBC 2" />
     <MESSAGE value="spring mvc - 게시판 앱 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring mvc - 게시판 앱 1" />
+    <MESSAGE value="spring mvc - 게시판 앱 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring mvc - 게시판 앱 2" />
   </component>
 </project>
