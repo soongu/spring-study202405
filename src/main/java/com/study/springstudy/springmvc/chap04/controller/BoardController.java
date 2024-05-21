@@ -5,6 +5,7 @@ import com.study.springstudy.springmvc.chap04.dto.BoardListResponseDto;
 import com.study.springstudy.springmvc.chap04.dto.BoardWriteRequestDto;
 import com.study.springstudy.springmvc.chap04.entity.Board;
 import com.study.springstudy.springmvc.chap04.repository.BoardRepository;
+import com.study.springstudy.springmvc.chap04.service.BoardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -29,21 +30,8 @@ public class BoardController {
     public String list(Model model) {
         System.out.println("/board/list GET");
 
-        // 1. 데이터베이스로부터 게시글 목록 조회
-        List<Board> boardList = repository.findAll();
-
-        // 2. 클라이언트에 데이터를 보내기전에 렌더링에 필요한
-        //    데이터만 추출하기
-        List<BoardListResponseDto> bList = boardList.stream()
-                .map(BoardListResponseDto::new)
-                .collect(Collectors.toList());
-
-//        List<BoardListResponseDto> bList = new ArrayList<>();
-//
-//        for (Board b : boardList) {
-//            BoardListResponseDto dto = new BoardListResponseDto(b);
-//            bList.add(dto);
-//        }
+        // 서비스에게 조회 요청 위임
+        List<BoardListResponseDto> bList = service.findList();
 
         // 3. JSP파일에 해당 목록데이터를 보냄
         model.addAttribute("bList", bList);
@@ -67,11 +55,7 @@ public class BoardController {
         // 1. 브라우저가 전달한 게시글 내용 읽기
         System.out.println("dto = " + dto);
 
-        // 2. 해당 게시글을 데이터베이스에 저장하기 위해 엔터티 클래스로 변환
-        Board b = dto.toEntity();
-
-        // 3. 데이터베이스 저장 명령
-        repository.save(b);
+        service.insert(dto);
 
         return "redirect:/board/list";
     }
@@ -82,7 +66,7 @@ public class BoardController {
     public String delete(int bno) {
         System.out.println("/board/delete GET");
 
-        repository.delete(bno);
+        service.remove(bno);
 
         return "redirect:/board/list";
     }
@@ -96,11 +80,10 @@ public class BoardController {
         System.out.println("bno = " + bno);
 
         // 2. 데이터베이스로부터 해당 글번호 데이터 조회하기
-        Board b = repository.findOne(bno);
-        if (b != null) repository.upViewCount(bno);
+        BoardDetailResponseDto dto = service.detail(bno);
 
         // 3. JSP파일에 조회한 데이터 보내기
-        model.addAttribute("bbb", new BoardDetailResponseDto(b));
+        model.addAttribute("bbb", dto);
 
         return "board/detail";
     }
