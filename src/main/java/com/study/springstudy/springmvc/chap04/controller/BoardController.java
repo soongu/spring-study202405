@@ -21,7 +21,8 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class BoardController {
 
-    private final BoardRepository repository;
+//    private final BoardRepository repository;
+    private final BoardService service;
 
     // 1. 목록 조회 요청 (/board/list : GET)
     @GetMapping("/list")
