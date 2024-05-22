@@ -5,8 +5,6 @@ import com.study.springstudy.springmvc.chap04.common.PageMaker;
 import com.study.springstudy.springmvc.chap04.dto.BoardDetailResponseDto;
 import com.study.springstudy.springmvc.chap04.dto.BoardListResponseDto;
 import com.study.springstudy.springmvc.chap04.dto.BoardWriteRequestDto;
-import com.study.springstudy.springmvc.chap04.entity.Board;
-import com.study.springstudy.springmvc.chap04.repository.BoardRepository;
 import com.study.springstudy.springmvc.chap04.service.BoardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -14,11 +12,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Controller
 @RequestMapping("/board")
