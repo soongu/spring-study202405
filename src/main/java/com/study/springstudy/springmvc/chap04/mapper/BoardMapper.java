@@ -25,4 +25,6 @@ public interface BoardMapper {
     void upViewCount(int boardNo);
 
 
+    // 총 게시물 수 조회
+    int count();
 }
