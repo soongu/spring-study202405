@@ -1,5 +1,6 @@
 package com.study.springstudy.springmvc.chap04.controller;
 
+import com.study.springstudy.springmvc.chap04.common.Page;
 import com.study.springstudy.springmvc.chap04.dto.BoardDetailResponseDto;
 import com.study.springstudy.springmvc.chap04.dto.BoardListResponseDto;
 import com.study.springstudy.springmvc.chap04.dto.BoardWriteRequestDto;
@@ -27,11 +28,11 @@ public class BoardController {
 
     // 1. 목록 조회 요청 (/board/list : GET)
     @GetMapping("/list")
-    public String list(Model model) {
+    public String list(Page page, Model model) {
         System.out.println("/board/list GET");
 
         // 서비스에게 조회 요청 위임
-        List<BoardListResponseDto> bList = service.findList();
+        List<BoardListResponseDto> bList = service.findList(page);
 
         // 3. JSP파일에 해당 목록데이터를 보냄
         model.addAttribute("bList", bList);
