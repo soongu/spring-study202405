@@ -8,6 +8,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
@@ -42,6 +44,47 @@ class ReplyMapperTest {
         }
     }
 */
+
+
+
+    @Test
+    @DisplayName("전체조회")
+    void findAllTest() {
+        //given
+        long boardNo = 1;
+        //when
+        List<Reply> replies = replyMapper.findAll(boardNo);
+        //then
+        replies.forEach(System.out::println);
+    }
+
+
+    @Test
+    @DisplayName("댓글 삭제")
+    void deleteTest() {
+        //given
+        long replyNo = 1;
+        //when
+        replyMapper.delete(replyNo);
+        //then
+    }
+
+
+    @Test
+    @DisplayName("수정")
+    void modifyTest() {
+        //given
+        long replyNo = 2;
+        Reply reply = Reply.builder()
+                .replyNo(replyNo)
+                .replyText("수정수정")
+                .build();
+        //when
+        replyMapper.modify(reply);
+        //then
+    }
+
+
 
 
 }

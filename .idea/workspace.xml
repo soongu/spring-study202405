@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="검색 처리 part3 - 디테일 처리">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardFindAllDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/ReplyMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/entity/Reply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/ReplyMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/chap05/ReplyMapperTest.java" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="댓글 기능 part1 - 게시물 총 댓글수 표기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/entity/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/entity/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/BoardMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardDetailResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardDetailResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/chap05/ReplyMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/chap05/ReplyMapperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +128,9 @@
     "JUnit.PersonMapperTest.updateTest.executor": "Run",
     "JUnit.PersonTest.test.executor": "Run",
     "JUnit.ReplyMapperTest.bulkInsert.executor": "Run",
+    "JUnit.ReplyMapperTest.deleteTest.executor": "Run",
+    "JUnit.ReplyMapperTest.findAllTest.executor": "Run",
+    "JUnit.ReplyMapperTest.modifyTest.executor": "Run",
     "JUnit.ScoreMapperTest.findAllTest.executor": "Run",
     "JUnit.ScoreMapperTest.findOneTest.executor": "Run",
     "JUnit.ScoreMapperTest.rankTest.executor": "Run",
@@ -203,22 +201,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoardMapperTest.insertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springstudy.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.study.springstudy.springmvc.chap04.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap04.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap04.mapper.BoardMapperTest" />
-      <option name="METHOD_NAME" value="insertTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ReplyMapperTest.bulkInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springstudy.test" />
       <extension name="coverage">
@@ -235,33 +217,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScoreMapperTest.findOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReplyMapperTest.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springstudy.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.study.springstudy.springmvc.chap03.mapper.*" />
+          <option name="PATTERN" value="com.study.springstudy.springmvc.chap05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap03.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap03.mapper.ScoreMapperTest" />
-      <option name="METHOD_NAME" value="findOneTest" />
+      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap05" />
+      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap05.ReplyMapperTest" />
+      <option name="METHOD_NAME" value="deleteTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScoreMapperTest.rankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReplyMapperTest.findAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springstudy.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.study.springstudy.springmvc.chap03.mapper.*" />
+          <option name="PATTERN" value="com.study.springstudy.springmvc.chap05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap03.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap03.mapper.ScoreMapperTest" />
-      <option name="METHOD_NAME" value="rankTest" />
+      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap05" />
+      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap05.ReplyMapperTest" />
+      <option name="METHOD_NAME" value="findAllTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReplyMapperTest.modifyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springstudy.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.springstudy.springmvc.chap05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap05" />
+      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap05.ReplyMapperTest" />
+      <option name="METHOD_NAME" value="modifyTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -270,10 +268,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.Main" />
+        <item itemvalue="JUnit.ReplyMapperTest.modifyTest" />
+        <item itemvalue="JUnit.ReplyMapperTest.deleteTest" />
+        <item itemvalue="JUnit.ReplyMapperTest.findAllTest" />
         <item itemvalue="JUnit.ReplyMapperTest.bulkInsert" />
-        <item itemvalue="JUnit.BoardMapperTest.insertTest" />
-        <item itemvalue="JUnit.ScoreMapperTest.rankTest" />
-        <item itemvalue="JUnit.ScoreMapperTest.findOneTest" />
       </list>
     </recent_temporary>
   </component>
@@ -542,7 +540,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716427756087</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="댓글 기능 part1 - 게시물 총 댓글수 표기">
+      <option name="closed" value="true" />
+      <created>1716433244828</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1716433244828</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -558,7 +564,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="spring mvc - 성적관리앱 1" />
     <MESSAGE value="spring mvc - 성적관리앱 2" />
     <MESSAGE value="spring mvc - 성적관리앱 3" />
     <MESSAGE value="spring mvc - 성적관리앱 4" />
@@ -583,6 +588,7 @@
     <MESSAGE value="검색 처리 part1 - 제목으로 검색" />
     <MESSAGE value="검색 처리 part2 - 클라이언트 처리" />
     <MESSAGE value="검색 처리 part3 - 디테일 처리" />
-    <option name="LAST_COMMIT_MESSAGE" value="검색 처리 part3 - 디테일 처리" />
+    <MESSAGE value="댓글 기능 part1 - 게시물 총 댓글수 표기" />
+    <option name="LAST_COMMIT_MESSAGE" value="댓글 기능 part1 - 게시물 총 댓글수 표기" />
   </component>
 </project>
