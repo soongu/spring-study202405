@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="댓글 기능 part1 - 게시물 총 댓글수 표기">
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="댓글 기능 part2 - 매퍼 테스트">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/rest/RestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardDetailResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/dto/BoardDetailResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/chap05/ReplyMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/study/springstudy/springmvc/chap05/ReplyMapperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -548,7 +546,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716433244828</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="댓글 기능 part2 - 매퍼 테스트">
+      <option name="closed" value="true" />
+      <created>1716435687882</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1716435687882</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -564,7 +570,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="spring mvc - 성적관리앱 2" />
     <MESSAGE value="spring mvc - 성적관리앱 3" />
     <MESSAGE value="spring mvc - 성적관리앱 4" />
     <MESSAGE value="spring mvc - 스프링 JDBC" />
@@ -589,6 +594,7 @@
     <MESSAGE value="검색 처리 part2 - 클라이언트 처리" />
     <MESSAGE value="검색 처리 part3 - 디테일 처리" />
     <MESSAGE value="댓글 기능 part1 - 게시물 총 댓글수 표기" />
-    <option name="LAST_COMMIT_MESSAGE" value="댓글 기능 part1 - 게시물 총 댓글수 표기" />
+    <MESSAGE value="댓글 기능 part2 - 매퍼 테스트" />
+    <option name="LAST_COMMIT_MESSAGE" value="댓글 기능 part2 - 매퍼 테스트" />
   </component>
 </project>
