@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="Logging">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/request/ReplyPostDto.java" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="댓글 API 등록기능">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/ReplyApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/ReplyApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/request/ReplyPostDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/request/ReplyPostDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/response/ReplyDetailDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/response/ReplyDetailDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,33 +35,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="springstudy" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="springstudy" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="springstudy" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="springstudy" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="springstudy" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="springstudy" type="f1a62948:ProjectNode" />
-                <item name="실행 구성" type="7b0102dc:RunConfigurationsNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -82,21 +57,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "soongu"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;soongu&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/soongu/spring-study202405.git",
-    "accountId": "8c32816b-481d-4ea8-902a-b914d19683df"
+}</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/soongu/spring-study202405.git&quot;,
+    &quot;accountId&quot;: &quot;8c32816b-481d-4ea8-902a-b914d19683df&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.3.26/539e1d03decbec523b7ad87fb786fd0b1cf29ce/spring-webmvc-5.3.26.jar!/org/springframework/web/servlet/HandlerMapping.class" root0="SKIP_INSPECTION" />
   </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -108,54 +89,58 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Gradle.HotelDiTest.diTest.executor": "Run",
-    "Gradle.HotelTest.hotelTest.executor": "Run",
-    "Gradle.springstudy [:Main.main()].executor": "Run",
-    "Gradle.springstudy [clean].executor": "Run",
-    "JUnit.BoardMapperTest.insertTest.executor": "Run",
-    "JUnit.BoardRepositoryImplTest.deleteTest.executor": "Run",
-    "JUnit.BoardRepositoryImplTest.findAll.executor": "Run",
-    "JUnit.BoardRepositoryImplTest.saveTest.executor": "Run",
-    "JUnit.HotelSpringDITest.diTest.executor": "Run",
-    "JUnit.LogExampleTest.logTest.executor": "Run",
-    "JUnit.PersonMapperTest.delTest.executor": "Run",
-    "JUnit.PersonMapperTest.findAllTest.executor": "Run",
-    "JUnit.PersonMapperTest.findNamesTest.executor": "Run",
-    "JUnit.PersonMapperTest.findOneTest.executor": "Run",
-    "JUnit.PersonMapperTest.saveTest.executor": "Run",
-    "JUnit.PersonMapperTest.updateTest.executor": "Run",
-    "JUnit.PersonTest.test.executor": "Run",
-    "JUnit.ReplyMapperTest.bulkInsert.executor": "Run",
-    "JUnit.ReplyMapperTest.deleteTest.executor": "Run",
-    "JUnit.ReplyMapperTest.findAllTest.executor": "Run",
-    "JUnit.ReplyMapperTest.modifyTest.executor": "Run",
-    "JUnit.ScoreMapperTest.findAllTest.executor": "Run",
-    "JUnit.ScoreMapperTest.findOneTest.executor": "Run",
-    "JUnit.ScoreMapperTest.rankTest.executor": "Run",
-    "JUnit.SpringJdbcTest.deleteTest.executor": "Run",
-    "JUnit.SpringJdbcTest.findAllTest.executor": "Run",
-    "JUnit.SpringJdbcTest.findOneTest.executor": "Run",
-    "JUnit.SpringJdbcTest.modifyTest.executor": "Run",
-    "JUnit.SpringJdbcTest.saveTest.executor": "Run",
-    "JUnit.StudentTest.sTest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/superstar/Desktop/develop/springstudy/src/main/resources/static/assets/img",
-    "onboarding.tips.debug.path": "/Users/superstar/Desktop/develop/springstudy/src/main/java/com/study/Main.java",
-    "project.structure.last.edited": "프로젝트",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editing.templates",
-    "애플리케이션.Main.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.HotelDiTest.diTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HotelTest.hotelTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.springstudy [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.springstudy [clean].executor&quot;: &quot;Run&quot;,
+    &quot;HTTP 요청.generated-requests | #6.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BoardMapperTest.insertTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BoardRepositoryImplTest.deleteTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BoardRepositoryImplTest.findAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BoardRepositoryImplTest.saveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HotelSpringDITest.diTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogExampleTest.logTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonMapperTest.delTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonMapperTest.findAllTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonMapperTest.findNamesTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonMapperTest.findOneTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonMapperTest.saveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonMapperTest.updateTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReplyMapperTest.bulkInsert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReplyMapperTest.deleteTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReplyMapperTest.findAllTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReplyMapperTest.modifyTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ScoreMapperTest.findAllTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ScoreMapperTest.findOneTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ScoreMapperTest.rankTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringJdbcTest.deleteTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringJdbcTest.findAllTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringJdbcTest.findOneTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringJdbcTest.modifyTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringJdbcTest.saveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentTest.sTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/superstar/Desktop/develop/springstudy&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/superstar/Desktop/develop/springstudy/src/main/java/com/study/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;애플리케이션.Main.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.study.springstudy.database.chap01" />
@@ -202,6 +187,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
     <configuration name="LogExampleTest.logTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springstudy.test" />
       <extension name="coverage">
@@ -213,22 +201,6 @@
       <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc" />
       <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.LogExampleTest" />
       <option name="METHOD_NAME" value="logTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReplyMapperTest.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springstudy.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.study.springstudy.springmvc.chap05.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.study.springstudy.springmvc.chap05" />
-      <option name="MAIN_CLASS_NAME" value="com.study.springstudy.springmvc.chap05.ReplyMapperTest" />
-      <option name="METHOD_NAME" value="deleteTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -266,13 +238,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springstudy.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.springstudy.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.Main" />
         <item itemvalue="JUnit.LogExampleTest.logTest" />
         <item itemvalue="JUnit.ReplyMapperTest.findAllTest" />
         <item itemvalue="JUnit.ReplyMapperTest.modifyTest" />
-        <item itemvalue="JUnit.ReplyMapperTest.deleteTest" />
       </list>
     </recent_temporary>
   </component>
@@ -284,6 +262,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715582906822</updated>
+      <workItem from="1716528901753" duration="151000" />
+      <workItem from="1716767867006" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="프론트 컨트롤러 패턴 part1">
       <option name="closed" value="true" />
@@ -573,8 +553,19 @@
       <option name="project" value="LOCAL" />
       <updated>1716521863510</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="댓글 API 등록기능">
+      <option name="closed" value="true" />
+      <created>1716528808799</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1716528808799</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -589,7 +580,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="spring mvc - 스프링 JDBC" />
     <MESSAGE value="spring mvc - 스프링 JDBC 2" />
     <MESSAGE value="spring mvc - 게시판 앱 1" />
     <MESSAGE value="spring mvc - 게시판 앱 2" />
@@ -614,6 +604,7 @@
     <MESSAGE value="댓글 기능 part2 - 매퍼 테스트" />
     <MESSAGE value="REST API 기초" />
     <MESSAGE value="Logging" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logging" />
+    <MESSAGE value="댓글 API 등록기능" />
+    <option name="LAST_COMMIT_MESSAGE" value="댓글 API 등록기능" />
   </component>
 </project>
