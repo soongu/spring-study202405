@@ -158,7 +158,6 @@
 
 
                 <!-- 댓글 영역 -->
-
                 <div id="replies" class="row">
                     <div class="offset-md-1 col-md-10">
                         <!-- 댓글 쓰기 영역 -->
