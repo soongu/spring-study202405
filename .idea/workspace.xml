@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="댓글 페이징 처리 2">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/spinner.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/getReply.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/getReply.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/reply.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/reply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +53,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="infscroll" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
@@ -246,9 +252,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.Main" />
-        <item itemvalue="JUnit.LogExampleTest.logTest" />
-        <item itemvalue="JUnit.ReplyMapperTest.findAllTest" />
         <item itemvalue="JUnit.ReplyMapperTest.modifyTest" />
+        <item itemvalue="JUnit.ReplyMapperTest.findAllTest" />
+        <item itemvalue="JUnit.LogExampleTest.logTest" />
       </list>
     </recent_temporary>
   </component>
