@@ -1,6 +1,6 @@
 
 import { BASE_URL } from "./reply.js";
-import { fetchInfScrollReplies } from "./getReply.js";
+import { initInfScroll } from "./getReply.js";
 
 // 서버에 댓글 등록을 요청하는 비동기 함수
 export const fetchReplyPost = async () => {
@@ -24,13 +24,9 @@ export const fetchReplyPost = async () => {
     body: JSON.stringify(payload)
   });
 
-  const replies = await res.json();
 
   textInput.value = '';
   writerInput.value = '';
 
-  // console.log(replies);
-  // renderReplies(replies);
-  fetchInfScrollReplies();
-  window.scrollTo(0, 0);
+  initInfScroll();
 };

@@ -1,5 +1,6 @@
 import { BASE_URL } from './reply.js';
 import { showSpinner, hideSpinner } from './spinner.js';
+import { debounce } from './util.js';
 
 function getRelativeTime(createAt) {
   // 현재 시간 구하기
@@ -33,6 +34,7 @@ function getRelativeTime(createAt) {
   }
 }
 
+/*
 
 function renderPage({ begin, end, pageInfo, prev, next }) {
   let tag = '';
@@ -122,6 +124,7 @@ export function replyPageClickEvent() {
 
 }
 
+*/
 
 // =============== 무한 스크롤 전용 함수 ============= //
 
@@ -130,8 +133,14 @@ let isFetching = false; // 데이터를 불러오는 중에는 더 가져오지 
 let totalReplies = 0; // 총 댓글 수
 let loadedReplies = 0; // 로딩된 댓글 수
 
+function appendReplies(replies, reset = false) {
 
-function appendReplies({ replies }) {
+  const $replyData = document.getElementById('replyData');
+
+  if (reset) {
+    $replyData.innerHTML = '';
+    return;
+  }
 
   // 댓글 목록 렌더링
   let tag = '';
@@ -160,80 +169,81 @@ function appendReplies({ replies }) {
   } else {
     tag = `<div id='replyContent' class='card-body'>댓글이 아직 없습니다! ㅠㅠ</div>`;
   }
-  document.getElementById('replyData').innerHTML += tag;
+  $replyData.innerHTML += tag;
   console.log('append replies');
-
-  // 로드된 댓글 수 업데이트
-  loadedReplies += replies.length;
-
 }
 
 // 서버에서 댓글 데이터를 페칭
-export async function fetchInfScrollReplies(pageNo=1) {
-
+export async function fetchInfScrollReplies(pageNo = 1, reset = false) {
   if (isFetching) return; // 서버에서 데이터를 가져오는 중이면 return
 
   isFetching = true;
+  showSpinner();
 
   const bno = document.getElementById('wrap').dataset.bno; // 게시물 글번호
   const res = await fetch(`${BASE_URL}/${bno}/page/${pageNo}`);
   const replyResponse = await res.json();
 
-  if (pageNo === 1) {
+  if (reset) {
     // 총 댓글 수 전역변수 값 세팅
     totalReplies = replyResponse.pageInfo.totalCount;
-    loadedReplies = 0; // 댓글 입력, 삭제시 다시 1페이지 로딩시 초기값으로 만들어주기
     // 댓글 수 렌더링
     document.getElementById('replyCnt').textContent = totalReplies;
-    // 초기 댓글 reset
-    document.getElementById('replyData').innerHTML = '';
-    console.log('reset replyData');
-    
-    setupInfiniteScroll();
+    loadedReplies = 0;
+    appendReplies([], true); // 기존 댓글 목록 비우기
   }
 
-  // 댓글 목록 렌더링
-  // console.log(replyResponse);
-  appendReplies(replyResponse);
-  currentPage = pageNo;
-  isFetching = false;
-  hideSpinner();
 
-  // 댓글을 전부 가져올 시 스크롤 이벤트 제거하기
-  if (loadedReplies >= totalReplies) {
-    removeInfiniteScroll();
-  }
+  const spinnerMinTime = 800; // 최소 스피너 표시 시간 (0.8초)
 
+  setTimeout(() => {
+    hideSpinner();
+    appendReplies(replyResponse.replies);
+    // 로드된 댓글 수 업데이트
+    loadedReplies += replyResponse.replies.length;
+    currentPage = pageNo;
+
+    // 댓글을 전부 가져올 시 스크롤 이벤트 제거하기
+    if (loadedReplies >= totalReplies) {
+      removeInfiniteScroll();
+    }
+
+    isFetching = false;
+
+  }, spinnerMinTime);
 }
 
 // 스크롤 이벤트 핸들러 함수
-async function scrollHandler(e) {
-
+function scrollHandler(e) {
   // 스크롤이 최하단부로 내려갔을 때만 이벤트 발생시켜야 함
-  //  현재창에 보이는 세로길이 + 스크롤을 내린 길이 >= 브라우저 전체 세로길이 
+  //  현재창에 보이는 세로길이 + 스크롤을 내린 길이 >= 브라우저 전체 세로길이
   if (
-    window.innerHeight + window.scrollY >= document.body.offsetHeight + 100
-    && !isFetching
+    window.innerHeight + window.scrollY >= document.body.offsetHeight - 100 &&
+    !isFetching
   ) {
-    // console.log('occured scroll event');
-    // console.log(e);
-    // 서버에서 데이터를 비동기로 불러와야 함
-    // 2초의 대기열이 생성되면 다음 대기열 생성까지 2초를 기다려야 함.
-    showSpinner();
-    await new Promise(resolve => setTimeout(resolve, 500));
-    await fetchInfScrollReplies(currentPage + 1);
+    console.log('occured scroll event');
+    fetchInfScrollReplies(currentPage + 1);
   }
 }
 
+// 디바운스 사용
+const debounceScrollHandler = debounce(scrollHandler, 500);
+
 // 무한 스크롤 이벤트 생성 함수
 export function setupInfiniteScroll() {
-  window.addEventListener('scroll', scrollHandler);
+  window.addEventListener('scroll', debounceScrollHandler);
 }
 
 // 무한 스크롤 이벤트 삭제 함수
 export function removeInfiniteScroll() {
-  window.removeEventListener('scroll', scrollHandler);
+  window.removeEventListener('scroll', debounceScrollHandler);
 }
 
-
-
+// 초기 상태 리셋 함수
+export async function initInfScroll() {
+  removeInfiniteScroll();
+  window.scrollTo(0, 0);
+  currentPage = 1;
+  fetchInfScrollReplies(1, true);
+  setupInfiniteScroll();
+}

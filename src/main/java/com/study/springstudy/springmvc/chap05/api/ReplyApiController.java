@@ -45,7 +45,7 @@ public class ReplyApiController {
 
         log.info("/api/v1/replies/{} : GET", bno);
 
-        ReplyListDto replies = replyService.getReplies(bno, new Page(pageNo, 10));
+        ReplyListDto replies = replyService.getReplies(bno, new Page(pageNo, 5));
 
         return ResponseEntity
                 .ok()
