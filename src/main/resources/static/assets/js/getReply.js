@@ -218,7 +218,6 @@ async function scrollHandler(e) {
     await new Promise(resolve => setTimeout(resolve, 500));
     fetchInfScrollReplies(currentPage + 1);
   }
-
 }
 
 // 무한 스크롤 이벤트 생성 함수
