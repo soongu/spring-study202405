@@ -14,8 +14,6 @@ class MemberMapperTest {
     @Autowired
     MemberMapper memberMapper;
 
-
-
     @Test
     @DisplayName("회원가입에 성공해야 한다")
     void saveTest() {
