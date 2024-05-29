@@ -1,5 +1,5 @@
 import { BASE_URL } from "./reply.js";
-import { fetchInfScrollReplies } from "./getReply.js";
+import { fetchInfScrollReplies, removeInfiniteScroll } from "./getReply.js";
 
 // 댓글 삭제 비동기 요청 처리 함수
 const fetchDeleteReply = async (rno) => {
@@ -13,7 +13,8 @@ const fetchDeleteReply = async (rno) => {
     return;
   }
 
-  fetchInfScrollReplies();
+  window.scrollTo(0, 0); // 삭제 후 페이지 상단으로 이동
+  await fetchInfScrollReplies();
 };
 
 // 댓글 삭제 처리 이벤트 등록 함수
