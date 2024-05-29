@@ -215,7 +215,7 @@ async function scrollHandler(e) {
     window.innerHeight + window.scrollY >= document.body.offsetHeight + 100
     && !isFetching
   ) {
-    console.log('occured scroll event');
+    // console.log('occured scroll event');
     // console.log(e);
     // 서버에서 데이터를 비동기로 불러와야 함
     // 2초의 대기열이 생성되면 다음 대기열 생성까지 2초를 기다려야 함.

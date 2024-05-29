@@ -1,6 +1,7 @@
 package com.study.springstudy.springmvc.chap05.api;
 
 import com.study.springstudy.springmvc.chap04.common.Page;
+import com.study.springstudy.springmvc.chap05.dto.request.ReplyModifyDto;
 import com.study.springstudy.springmvc.chap05.dto.request.ReplyPostDto;
 import com.study.springstudy.springmvc.chap05.dto.response.ReplyDetailDto;
 import com.study.springstudy.springmvc.chap05.dto.response.ReplyListDto;
@@ -103,6 +104,42 @@ public class ReplyApiController {
         return ResponseEntity
                 .ok()
                 .body(dtoList);
+    }
+
+    // 댓글 수정 요청
+//    @PutMapping   // 전체수정
+//    @PatchMapping // 일부수정
+
+    /*
+        let obj = {
+            age : 3
+        }
+
+        PUT  -   obj = { age: 10 };
+        PATCH -  obj.age = 10;
+     */
+
+    @RequestMapping(method = {RequestMethod.PUT, RequestMethod.PATCH})
+    public ResponseEntity<?> modify(
+            @Validated @RequestBody ReplyModifyDto dto
+            , BindingResult result
+    ) {
+
+        log.info("/api/v1/replies : PUT, PATCH");
+        log.debug("parameter: {}", dto);
+
+        if (result.hasErrors()) {
+            Map<String, String> errors = makeValidationMessageMap(result);
+
+            return ResponseEntity
+                    .badRequest()
+                    .body(errors);
+        }
+
+        ReplyListDto replyListDto = replyService.modify(dto);
+
+        return ResponseEntity.ok().body(replyListDto);
+
     }
 
 }
