@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 회원가입 클라이언트 아이디 입력검증">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/signUp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/validate.js" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 회원가입 입력값 검증 완료">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/request/SignUpDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/request/SignUpDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/validation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members/sign-up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members/sign-up.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/signUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/signUp.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,14 +293,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00001" summary="프론트 컨트롤러 패턴 part1">
-      <option name="closed" value="true" />
-      <created>1715666804644</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1715666804644</updated>
     </task>
     <task id="LOCAL-00002" summary="프론트 컨트롤러 패턴 part2">
       <option name="closed" value="true" />
@@ -692,7 +678,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717039514709</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="# 회원가입 입력값 검증 완료">
+      <option name="closed" value="true" />
+      <created>1717052354536</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1717052354538</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -711,7 +705,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="페이징 기초" />
     <MESSAGE value="페이징 렌더링 알고리즘 1" />
     <MESSAGE value="페이징 렌더링 알고리즘 2 - 마지막 구간 끝페이지 보정" />
     <MESSAGE value="페이징 렌더링 알고리즘 3 - 이전, 다음 활성화" />
@@ -736,6 +729,7 @@
     <MESSAGE value="# 회원가입 패스워드 인코딩 처리" />
     <MESSAGE value="# include" />
     <MESSAGE value="# 회원가입 클라이언트 아이디 입력검증" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 회원가입 클라이언트 아이디 입력검증" />
+    <MESSAGE value="# 회원가입 입력값 검증 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 회원가입 입력값 검증 완료" />
   </component>
 </project>
