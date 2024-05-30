@@ -17,6 +17,7 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
         http
+                .csrf().disable()  // csrf 토큰공격방지 기능 off
                 // 모든 요청에 대해 인증하지 않겠다.
                 .authorizeRequests().antMatchers("/**").permitAll();
 
