@@ -2,18 +2,17 @@ package com.study.springstudy.springmvc.chap05.api;
 
 import com.study.springstudy.springmvc.chap05.dto.request.LoginDto;
 import com.study.springstudy.springmvc.chap05.dto.request.SignUpDto;
+import com.study.springstudy.springmvc.chap05.dto.response.LoginUserInfoDto;
 import com.study.springstudy.springmvc.chap05.service.LoginResult;
 import com.study.springstudy.springmvc.chap05.service.MemberService;
+import com.study.springstudy.springmvc.util.LoginUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
@@ -30,6 +29,7 @@ public class MemberController {
     // 회원가입 양식 열기
     @GetMapping("/sign-up")
     public void signUp() {
+
         log.info("/members/sign-up GET : forwarding to sign-up.jsp");
         // return "members/sign-up";
     }
@@ -37,6 +37,9 @@ public class MemberController {
     // 회원가입 요청 처리
     @PostMapping("/sign-up")
     public String signUp(@Validated SignUpDto dto) {
+
+
+
         log.info("/members/sign-up POST ");
         log.debug("parameter: {}", dto);
 
@@ -58,8 +61,18 @@ public class MemberController {
 
     // 로그인 양식 열기
     @GetMapping("/sign-in")
-    public void signIn() {
+    public String signIn(HttpSession session
+                        , @RequestParam(required = false) String redirect
+    ) {
+
+        // 로그인을 한 사람이 이 요청을 보내면 돌려보낸다.
+//        if (LoginUtil.isLoggedIn(session)) {
+//            return "redirect:/";
+//        }
+        session.setAttribute("redirect", redirect);
+
         log.info("/members/sign-in GET : forwarding to sign-in.jsp");
+        return "members/sign-in";
     }
 
     // 로그인 요청 처리
@@ -86,10 +99,33 @@ public class MemberController {
         ra.addFlashAttribute("result", result);
 
         if (result == LoginResult.SUCCESS) {
+
+            // 혹시 세션에 리다이렉트 URL이 있다면
+            String redirect = (String) session.getAttribute("redirect");
+            if (redirect != null) {
+                session.removeAttribute("redirect");
+                return "redirect:" + redirect;
+            }
+
             return "redirect:/index"; // 로그인 성공시
         }
 
         return "redirect:/members/sign-in";
+    }
+
+    @GetMapping("/sign-out")
+    public String signOut(HttpSession session) {
+        // 세션 구하기
+//        HttpSession session = request.getSession();
+
+        // 세션에서 로그인 기록 삭제
+        session.removeAttribute("login");
+
+        // 세션을 초기화 (reset)
+        session.invalidate();
+
+        // 홈으로 보내기
+        return "redirect:/";
     }
 
 }
