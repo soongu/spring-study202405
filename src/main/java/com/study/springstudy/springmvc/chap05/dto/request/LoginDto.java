@@ -3,7 +3,7 @@ package com.study.springstudy.springmvc.chap05.dto.request;
 
 import lombok.*;
 
-@Getter @ToString
+@Setter @Getter @ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
