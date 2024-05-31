@@ -48,9 +48,9 @@
 
     <insert id="save">
         INSERT INTO tbl_board
-            (writer, content, title)
+            (writer, content, title, account)
         VALUES
-            (#{writer}, #{content}, #{title})
+            (#{writer}, #{content}, #{title}, #{account})
     </insert>
 
     <delete id="delete">
