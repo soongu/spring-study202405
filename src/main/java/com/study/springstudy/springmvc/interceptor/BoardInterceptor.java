@@ -26,6 +26,10 @@ public class BoardInterceptor implements HandlerInterceptor {
             response.sendRedirect("/members/sign-in?message=login-required&redirect=" + redirectUri);
             return false;
         }
+
+        // 삭제요청이 들어오면 서버에서 한번더 관리자인지? 자기가쓴글인지 체크
+
+
         return true;
     }
 }
