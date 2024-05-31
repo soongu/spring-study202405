@@ -26,6 +26,7 @@ public class BoardService {
 
     // 목록 조회 요청 중간처리
     public List<BoardListResponseDto> findList(Search page) {
+
         List<BoardFindAllDto> boardList = boardMapper.findAll(page);
 
         // 조회해온 게시물 리스트에서 각 게시물들의 조회수를 확인하여

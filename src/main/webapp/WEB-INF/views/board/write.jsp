@@ -5,8 +5,6 @@
         <html lang="ko">
 
         <head>
-
-
             <%@ include file="../include/static-head.jsp" %>
 
 
