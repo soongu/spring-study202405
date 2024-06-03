@@ -12,6 +12,7 @@ import org.springframework.web.util.WebUtils;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.time.LocalDateTime;
 
 @Configuration
@@ -27,8 +28,9 @@ public class AutoLoginInterceptor implements HandlerInterceptor {
         Cookie autoLoginCookie
                 = WebUtils.getCookie(request, LoginUtil.AUTO_LOGIN_COOKIE);
 
-        // 2. 자동로그인 쿠키가 있으면 사이트 로그인 처리를 수행
-        if (autoLoginCookie != null) {
+        // 2. 자동로그인 쿠키가 있고 로그인을 안했으면 사이트 로그인 처리를 수행
+        HttpSession session = request.getSession();
+        if (autoLoginCookie != null && LoginUtil.isLoggedIn(session)) {
             // 3. 쿠키에 들어있는 랜덤값을 읽기
             String sessionId = autoLoginCookie.getValue();
 
@@ -40,7 +42,7 @@ public class AutoLoginInterceptor implements HandlerInterceptor {
             if (foundMember != null
                     && LocalDateTime.now().isBefore(foundMember.getLimitTime())) {
 
-                MemberService.maintainLoginState(request.getSession(), foundMember);
+                MemberService.maintainLoginState(session, foundMember);
             }
         }
 

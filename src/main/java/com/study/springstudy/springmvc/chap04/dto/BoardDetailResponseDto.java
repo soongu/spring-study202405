@@ -18,6 +18,13 @@ public class BoardDetailResponseDto {
     private String regDateTime;
 
     @Setter
+    private int likeCount;
+    @Setter
+    private int dislikeCount;
+    @Setter
+    private String userReaction;
+
+    @Setter
     private List<Reply> replies;
 
     public BoardDetailResponseDto(Board b) {
