@@ -244,12 +244,21 @@ uri="http://java.sun.com/jsp/jstl/core" %>
       updateReactionButtons(userReaction);
 
       document.getElementById('like-btn').addEventListener('click', e => {
-        sendReaction('like');
+        handleReaction('like');
       });
 
       document.getElementById('dislike-btn').addEventListener('click', e => {
-        sendReaction('dislike');
+        handleReaction('dislike');
       });
+
+      async function handleReaction(type) {
+        const isLoggedIn = ${login != null};
+        if (!isLoggedIn) {
+            alert('로그인이 필요합니다.');
+            return;
+        }
+        await sendReaction(type);
+      }
 
       async function sendReaction(type) {
         const bno = '${bbb.boardNo}';
