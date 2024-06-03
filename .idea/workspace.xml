@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 자동로그인 처리 ( 로그아웃 처리 )">
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 쿠키를 사용한 조회수 중복증가 방지처리">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/entity/ViewLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/mapper/ViewLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/ViewLogMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +46,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="jsp template" />
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -294,14 +298,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00013" summary="spring mvc - 스프링 JDBC 2">
-      <option name="closed" value="true" />
-      <created>1715923939373</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1715923939373</updated>
     </task>
     <task id="LOCAL-00014" summary="spring mvc - 게시판 앱 1">
       <option name="closed" value="true" />
@@ -687,7 +683,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717385300251</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="# 쿠키를 사용한 조회수 중복증가 방지처리">
+      <option name="closed" value="true" />
+      <created>1717392107357</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1717392107357</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -706,7 +710,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="REST API 기초" />
     <MESSAGE value="Logging" />
     <MESSAGE value="댓글 API 등록기능" />
     <MESSAGE value="댓글 API 등록기능 - 입력값 검증" />
@@ -731,6 +734,7 @@
     <MESSAGE value="# 자동로그인 처리 ( 쿠키생성, 디비처리 )" />
     <MESSAGE value="# 자동로그인 처리 ( 인터셉터 생성 )" />
     <MESSAGE value="# 자동로그인 처리 ( 로그아웃 처리 )" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 자동로그인 처리 ( 로그아웃 처리 )" />
+    <MESSAGE value="# 쿠키를 사용한 조회수 중복증가 방지처리" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 쿠키를 사용한 조회수 중복증가 방지처리" />
   </component>
 </project>
