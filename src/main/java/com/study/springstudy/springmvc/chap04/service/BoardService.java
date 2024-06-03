@@ -7,8 +7,6 @@ import com.study.springstudy.springmvc.chap04.dto.BoardListResponseDto;
 import com.study.springstudy.springmvc.chap04.dto.BoardWriteRequestDto;
 import com.study.springstudy.springmvc.chap04.entity.Board;
 import com.study.springstudy.springmvc.chap04.mapper.BoardMapper;
-import com.study.springstudy.springmvc.chap05.entity.Reply;
-import com.study.springstudy.springmvc.chap05.mapper.ReplyMapper;
 import com.study.springstudy.springmvc.util.LoginUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -22,7 +20,6 @@ import java.util.stream.Collectors;
 public class BoardService {
 
     private final BoardMapper boardMapper;
-    private final ReplyMapper replyMapper;
 
     // 목록 조회 요청 중간처리
     public List<BoardListResponseDto> findList(Search page) {
@@ -56,7 +53,6 @@ public class BoardService {
     public BoardDetailResponseDto detail(int bno) {
         Board b = boardMapper.findOne(bno);
         if (b != null) boardMapper.upViewCount(bno);
-
 
         BoardDetailResponseDto responseDto = new BoardDetailResponseDto(b);
 
