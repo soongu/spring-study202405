@@ -6,6 +6,7 @@ import com.study.springstudy.springmvc.chap04.dto.BoardDetailResponseDto;
 import com.study.springstudy.springmvc.chap04.dto.BoardListResponseDto;
 import com.study.springstudy.springmvc.chap04.dto.BoardWriteRequestDto;
 import com.study.springstudy.springmvc.chap04.service.BoardService;
+import com.study.springstudy.springmvc.chap05.dto.response.ReactionDto;
 import com.study.springstudy.springmvc.chap05.service.ReactionService;
 import com.study.springstudy.springmvc.util.LoginUtil;
 import lombok.RequiredArgsConstructor;
@@ -114,9 +115,9 @@ public class BoardController {
 
         String account = LoginUtil.getLoggedInUserAccount(session);
 
-        reactionService.like(bno, account); // 좋아요 요청 처리
+        ReactionDto dto = reactionService.like(bno, account);// 좋아요 요청 처리
 
-        return null;
+        return ResponseEntity.ok().body(dto);
     }
 
 
@@ -129,9 +130,9 @@ public class BoardController {
 
         String account = LoginUtil.getLoggedInUserAccount(session);
 
-        reactionService.dislike(bno, account); // 싫어요 요청 처리
+        ReactionDto dto = reactionService.dislike(bno, account);// 싫어요 요청 처리
 
-        return null;
+        return ResponseEntity.ok().body(dto);
     }
 
 

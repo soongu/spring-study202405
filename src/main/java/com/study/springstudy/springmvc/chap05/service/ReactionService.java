@@ -1,11 +1,11 @@
 package com.study.springstudy.springmvc.chap05.service;
 
+import com.study.springstudy.springmvc.chap05.dto.response.ReactionDto;
 import com.study.springstudy.springmvc.chap05.entity.Reaction;
 import com.study.springstudy.springmvc.chap05.entity.ReactionType;
 import com.study.springstudy.springmvc.chap05.mapper.ReactionMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PutMapping;
 
 @Service
 @RequiredArgsConstructor
@@ -15,7 +15,7 @@ public class ReactionService {
 
 
     // 공통 리액션 DB처리 메서드
-    private void handleReaction(long boardNo
+    private Reaction handleReaction(long boardNo
             , String account
             , ReactionType newReactionType) {
 
@@ -48,16 +48,39 @@ public class ReactionService {
             reactionMapper.save(newReaction); // 새 리액션 생성
         }
 
+        // 리액션 한 후 재조회를 통해 DB데이터 상태를 체크
+        return reactionMapper.findOne(boardNo, account);
+
     }
 
 
     // 좋아요 중간처리
-    public void like(long boardNo, String account) {
-        handleReaction(boardNo, account, ReactionType.LIKE);
+    public ReactionDto like(long boardNo, String account) {
+        Reaction reaction = handleReaction(boardNo, account, ReactionType.LIKE);
+        return getReactionDto(boardNo, reaction);
     }
 
     // 싫어요 중간처리
-    public void dislike(long boardNo, String account) {
-        handleReaction(boardNo, account, ReactionType.DISLIKE);
+    public ReactionDto dislike(long boardNo, String account) {
+        Reaction reaction = handleReaction(boardNo, account, ReactionType.DISLIKE);
+        return getReactionDto(boardNo, reaction);
     }
+
+
+    private ReactionDto getReactionDto(long boardNo, Reaction reaction) {
+
+        String reactionType = null;
+
+        if (reaction != null) { // 좋아요, 싫어요를 누른 상태
+            reactionType = reaction.getReactionType().toString();
+        }
+
+        return ReactionDto.builder()
+                .likeCount(reactionMapper.countLikes(boardNo))
+                .dislikeCount(reactionMapper.countDislikes(boardNo))
+                .userReaction(reactionType)
+                .build();
+    }
+
+
 }
