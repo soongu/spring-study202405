@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 쿠키를 사용한 조회수 중복증가 방지처리">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/entity/ViewLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/mapper/ViewLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/ViewLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/entity/Reaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/entity/ReactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/mapper/ReactionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/ReactionMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap04/service/BoardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +47,8 @@
       <list>
         <option value="jsp template" />
         <option value="JUnit5 Test Class" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
         <option value="Interface" />
       </list>
     </option>
@@ -94,72 +94,72 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Gradle.HotelDiTest.diTest.executor": "Run",
-    "Gradle.HotelTest.hotelTest.executor": "Run",
-    "Gradle.springstudy [:Main.main()].executor": "Run",
-    "Gradle.springstudy [clean].executor": "Run",
-    "Gradle.소스 다운로드.executor": "Run",
-    "HTTP 요청.generated-requests | #6.executor": "Run",
-    "JUnit.BoardMapperTest.insertTest.executor": "Run",
-    "JUnit.BoardRepositoryImplTest.deleteTest.executor": "Run",
-    "JUnit.BoardRepositoryImplTest.findAll.executor": "Run",
-    "JUnit.BoardRepositoryImplTest.saveTest.executor": "Run",
-    "JUnit.HotelSpringDITest.diTest.executor": "Run",
-    "JUnit.LogExampleTest.logTest.executor": "Run",
-    "JUnit.MemberMapperTest.encodingTest.executor": "Run",
-    "JUnit.MemberMapperTest.existsTest.executor": "Run",
-    "JUnit.MemberMapperTest.existsTest2.executor": "Run",
-    "JUnit.MemberMapperTest.findOneTest.executor": "Run",
-    "JUnit.MemberMapperTest.saveTest.executor": "Run",
-    "JUnit.MemberServiceTest.joinTest.executor": "Run",
-    "JUnit.MemberServiceTest.noAccTest.executor": "Run",
-    "JUnit.MemberServiceTest.noPwTest.executor": "Run",
-    "JUnit.MemberServiceTest.successTest.executor": "Run",
-    "JUnit.PersonMapperTest.delTest.executor": "Run",
-    "JUnit.PersonMapperTest.findAllTest.executor": "Run",
-    "JUnit.PersonMapperTest.findNamesTest.executor": "Run",
-    "JUnit.PersonMapperTest.findOneTest.executor": "Run",
-    "JUnit.PersonMapperTest.saveTest.executor": "Run",
-    "JUnit.PersonMapperTest.updateTest.executor": "Run",
-    "JUnit.PersonTest.test.executor": "Run",
-    "JUnit.ReplyMapperTest.bulkInsert.executor": "Run",
-    "JUnit.ReplyMapperTest.deleteTest.executor": "Run",
-    "JUnit.ReplyMapperTest.findAllTest.executor": "Run",
-    "JUnit.ReplyMapperTest.modifyTest.executor": "Run",
-    "JUnit.ScoreMapperTest.findAllTest.executor": "Run",
-    "JUnit.ScoreMapperTest.findOneTest.executor": "Run",
-    "JUnit.ScoreMapperTest.rankTest.executor": "Run",
-    "JUnit.SpringJdbcTest.deleteTest.executor": "Run",
-    "JUnit.SpringJdbcTest.findAllTest.executor": "Run",
-    "JUnit.SpringJdbcTest.findOneTest.executor": "Run",
-    "JUnit.SpringJdbcTest.modifyTest.executor": "Run",
-    "JUnit.SpringJdbcTest.saveTest.executor": "Run",
-    "JUnit.StudentTest.sTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/superstar/Desktop/develop/springstudy",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/superstar/Desktop/develop/springstudy/src/main/java/com/study/Main.java",
-    "project.structure.last.edited": "프로젝트",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editing.templates",
-    "vue.rearranger.settings.migration": "true",
-    "애플리케이션.Main.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.HotelDiTest.diTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HotelTest.hotelTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.springstudy [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.springstudy [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.소스 다운로드.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP 요청.generated-requests | #6.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BoardMapperTest.insertTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BoardRepositoryImplTest.deleteTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BoardRepositoryImplTest.findAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BoardRepositoryImplTest.saveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HotelSpringDITest.diTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LogExampleTest.logTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MemberMapperTest.encodingTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MemberMapperTest.existsTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MemberMapperTest.existsTest2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MemberMapperTest.findOneTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MemberMapperTest.saveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MemberServiceTest.joinTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MemberServiceTest.noAccTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MemberServiceTest.noPwTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MemberServiceTest.successTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonMapperTest.delTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonMapperTest.findAllTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonMapperTest.findNamesTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonMapperTest.findOneTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonMapperTest.saveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonMapperTest.updateTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PersonTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReplyMapperTest.bulkInsert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReplyMapperTest.deleteTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReplyMapperTest.findAllTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ReplyMapperTest.modifyTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ScoreMapperTest.findAllTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ScoreMapperTest.findOneTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ScoreMapperTest.rankTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringJdbcTest.deleteTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringJdbcTest.findAllTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringJdbcTest.findOneTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringJdbcTest.modifyTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpringJdbcTest.saveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentTest.sTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/superstar/Desktop/develop/springstudy&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/superstar/Desktop/develop/springstudy/src/main/java/com/study/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;애플리케이션.Main.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.study.springstudy.springmvc.chap05.service" />
       <recent name="com.study.springstudy.springmvc.chap05.entity" />
+      <recent name="com.study.springstudy.springmvc.chap05.service" />
       <recent name="com.study.springstudy.database.chap01" />
       <recent name="com.study.springstudy.springmvc.chap03.entity" />
       <recent name="com.study.springstudy.chap02" />
