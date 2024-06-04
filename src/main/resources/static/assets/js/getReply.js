@@ -127,7 +127,6 @@ export function replyPageClickEvent() {
 }
 
 // =============== 무한 스크롤 전용 함수 ============= //
-
 let currentPage = 1; // 현재 무한스크롤시 진행되고 있는 페이지 번호
 let isFetching = false; // 데이터를 불러오는 중에는 더 가져오지 않게 제어하기 위한 논리변수
 let totalReplies = 0; // 총 댓글 수

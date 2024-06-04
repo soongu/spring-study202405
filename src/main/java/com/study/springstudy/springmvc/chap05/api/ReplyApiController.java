@@ -3,7 +3,6 @@ package com.study.springstudy.springmvc.chap05.api;
 import com.study.springstudy.springmvc.chap04.common.Page;
 import com.study.springstudy.springmvc.chap05.dto.request.ReplyModifyDto;
 import com.study.springstudy.springmvc.chap05.dto.request.ReplyPostDto;
-import com.study.springstudy.springmvc.chap05.dto.response.ReplyDetailDto;
 import com.study.springstudy.springmvc.chap05.dto.response.ReplyListDto;
 import com.study.springstudy.springmvc.chap05.service.ReplyService;
 import com.study.springstudy.springmvc.util.LoginUtil;

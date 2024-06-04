@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 댓글 인가처리 - 댓글쓰기 기능 수정">
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 댓글 인가처리 - 내가 쓴글만 수정 삭제하기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/ReplyApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/ReplyApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/response/ReplyDetailDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/response/ReplyDetailDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/response/ReplyListDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/dto/response/ReplyListDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/getReply.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/getReply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,14 +296,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00019" summary="3 tier architecture - part1">
-      <option name="closed" value="true" />
-      <created>1716177024022</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1716177024022</updated>
     </task>
     <task id="LOCAL-00020" summary="3 tier architecture - part2">
       <option name="closed" value="true" />
@@ -691,7 +681,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717480679072</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="# 댓글 인가처리 - 내가 쓴글만 수정 삭제하기">
+      <option name="closed" value="true" />
+      <created>1717482954819</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1717482954819</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -710,7 +708,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="댓글 페이징 처리 2" />
     <MESSAGE value="무한스크롤 완성" />
     <MESSAGE value="댓글 삭제 기능" />
     <MESSAGE value="댓글 수정 백엔드" />
@@ -735,6 +732,7 @@
     <MESSAGE value="# 좋아요 싫어요 3" />
     <MESSAGE value="# 댓글 인가처리 - 인터셉터설정 및 fetch 함수 호출 일원화" />
     <MESSAGE value="# 댓글 인가처리 - 댓글쓰기 기능 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 댓글 인가처리 - 댓글쓰기 기능 수정" />
+    <MESSAGE value="# 댓글 인가처리 - 내가 쓴글만 수정 삭제하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 댓글 인가처리 - 내가 쓴글만 수정 삭제하기" />
   </component>
 </project>
