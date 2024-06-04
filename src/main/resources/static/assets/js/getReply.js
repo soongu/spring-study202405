@@ -1,5 +1,6 @@
 import { BASE_URL } from './reply.js';
 import { showSpinner, hideSpinner } from './spinner.js';
+import { callApi } from './api.js';
 
 function getRelativeTime(createAt) {
   // 현재 시간 구하기
@@ -103,8 +104,11 @@ export function renderReplies({ pageInfo, replies }) {
 export async function fetchReplies(pageNo=1) {
   const bno = document.getElementById('wrap').dataset.bno; // 게시물 글번호
 
-  const res = await fetch(`${BASE_URL}/${bno}/page/${pageNo}`);
-  const replyResponse = await res.json();
+
+  const replyResponse = await callApi(`${BASE_URL}/${bno}/page/${pageNo}`);
+
+  // const res = await fetch(`${BASE_URL}/${bno}/page/${pageNo}`);
+  // const replyResponse = await res.json();
   // { pageInfo: {}, replies: [] }
 
   // 댓글 목록 렌더링
