@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 좋아요 싫어요 3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/interceptor/ApiAuthInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/api.js" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 댓글 인가처리 - 인터셉터설정 및 fetch 함수 호출 일원화">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/config/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/config/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/deleteReply.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/deleteReply.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/getReply.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/getReply.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/modifyReply.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/modifyReply.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/postReply.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/postReply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/ReplyApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/ReplyApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/entity/Reply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/entity/Reply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/ReplyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/ReplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/ReplyMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/detail.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,14 +298,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00017" summary="spring mvc - 게시판 앱 4">
-      <option name="closed" value="true" />
-      <created>1716172990822</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1716172990822</updated>
     </task>
     <task id="LOCAL-00018" summary="spring mvc - 게시판 앱 5">
       <option name="closed" value="true" />
@@ -693,7 +683,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717466931215</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="# 댓글 인가처리 - 인터셉터설정 및 fetch 함수 호출 일원화">
+      <option name="closed" value="true" />
+      <created>1717478993560</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1717478993560</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -712,7 +710,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="댓글 등록, 목록조회 클라이언트 비동기 요청 처리" />
     <MESSAGE value="댓글 페이징 처리 1" />
     <MESSAGE value="댓글 페이징 처리 2" />
     <MESSAGE value="무한스크롤 완성" />
@@ -737,6 +734,7 @@
     <MESSAGE value="# 좋아요 싫어요 1" />
     <MESSAGE value="# 좋아요 싫어요 2" />
     <MESSAGE value="# 좋아요 싫어요 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 좋아요 싫어요 3" />
+    <MESSAGE value="# 댓글 인가처리 - 인터셉터설정 및 fetch 함수 호출 일원화" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 댓글 인가처리 - 인터셉터설정 및 fetch 함수 호출 일원화" />
   </component>
 </project>
