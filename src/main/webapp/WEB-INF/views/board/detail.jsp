@@ -149,6 +149,27 @@
 
             <script type="module" src="/assets/js/reply.js"></script>
 
+            <script>
+
+                // 서버에 좋아요, 싫어요 요청을 보내는 함수
+                async function sendReaction(reactionType) {
+                    console.log(reactionType);
+                    const bno = document.getElementById('wrap').dataset.bno;
+                    
+                    const res = await fetch(`/board/\${reactionType}?bno=\${bno}`);
+                }
+
+                // 좋아요 클릭 이벤트
+                document.getElementById('like-btn').addEventListener('click', e => {
+                    sendReaction('like');
+                });
+
+                // 싫어요 클릭 이벤트
+                document.getElementById('dislike-btn').addEventListener('click', e => {
+                    sendReaction('dislike');
+                });
+            </script>
+
         </body>
 
         </html>
