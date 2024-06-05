@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 회원가입 - 프로필사진 처리 1" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 회원가입 - 프로필사진 처리 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/config/LocalResourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/entity/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/MemberMapper.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -291,14 +300,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00024" summary="마이바티스 part3">
-      <option name="closed" value="true" />
-      <created>1716274373880</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1716274373880</updated>
     </task>
     <task id="LOCAL-00025" summary="페이징 기초">
       <option name="closed" value="true" />
@@ -684,7 +685,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717552238371</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="# 회원가입 - 프로필사진 처리 2">
+      <option name="closed" value="true" />
+      <created>1717552662372</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1717552662372</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -703,7 +712,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="댓글 수정 프론트엔드" />
     <MESSAGE value="# 회원관리 시스템 만들기 - Entity, Mapper 생성" />
     <MESSAGE value="# 회원가입 패스워드 인코딩 처리" />
     <MESSAGE value="# include" />
@@ -728,6 +736,7 @@
     <MESSAGE value="# 댓글 인가처리" />
     <MESSAGE value="# 파일 업로드 처리 기본" />
     <MESSAGE value="# 회원가입 - 프로필사진 처리 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 회원가입 - 프로필사진 처리 1" />
+    <MESSAGE value="# 회원가입 - 프로필사진 처리 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 회원가입 - 프로필사진 처리 2" />
   </component>
 </project>

@@ -39,7 +39,17 @@ public class FileUtil {
             e.printStackTrace();
         }
 
-        return "";
+        // 파일 전체 경로
+
+        // fullPath:  D:/spring_prj/upload/2024/06/05/djlfsjdjsf_dog.png
+        String fullPath = newUploadPath + "/" + newFileName;
+
+        // url-path: /local/2024/06/05/djlfsjdjsf_dog.png
+        String urlPath = "/local"+fullPath.substring(rootPath.length());
+
+        // 업로드가 완료되면 데이터베이스에 파일의 경로 위치를 저장
+        // ex) /local/2024/06/05/dkfjsldjfkslfjlds_dog.jpg
+        return urlPath;
     }
 
     private static String makeDateFormatDirectory(String rootPath) {
