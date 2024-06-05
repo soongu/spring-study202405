@@ -23,6 +23,7 @@ import java.util.Map;
 @RequestMapping("/api/v1/replies")
 @RequiredArgsConstructor
 @Slf4j
+@CrossOrigin
 public class ReplyApiController {
 
     private final ReplyService replyService;
