@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 댓글 인가처리">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/upload/UploadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/FileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload/upload-form.jsp" afterDir="false" />
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 파일 업로드 처리 기본">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/anonymous.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/image-add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/assets/img/마멜이.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/util/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/css/member.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/css/member.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/img.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members/sign-up.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members/sign-up.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload/upload-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload/upload-form.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,14 +301,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00022" summary="마이바티스 part1">
-      <option name="closed" value="true" />
-      <created>1716259944025</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1716259944025</updated>
     </task>
     <task id="LOCAL-00023" summary="마이바티스 part2">
       <option name="closed" value="true" />
@@ -689,7 +686,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717487687186</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="# 파일 업로드 처리 기본">
+      <option name="closed" value="true" />
+      <created>1717549054696</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1717549054696</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -708,7 +713,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="댓글 삭제 기능" />
     <MESSAGE value="댓글 수정 백엔드" />
     <MESSAGE value="댓글 수정 프론트엔드" />
     <MESSAGE value="# 회원관리 시스템 만들기 - Entity, Mapper 생성" />
@@ -733,6 +737,7 @@
     <MESSAGE value="# 댓글 인가처리 - 댓글쓰기 기능 수정" />
     <MESSAGE value="# 댓글 인가처리 - 내가 쓴글만 수정 삭제하기" />
     <MESSAGE value="# 댓글 인가처리" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 댓글 인가처리" />
+    <MESSAGE value="# 파일 업로드 처리 기본" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 파일 업로드 처리 기본" />
   </component>
 </project>
