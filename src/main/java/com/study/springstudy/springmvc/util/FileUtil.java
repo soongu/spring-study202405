@@ -47,6 +47,7 @@ public class FileUtil {
         // url-path: /local/2024/06/05/djlfsjdjsf_dog.png
         String urlPath = "/local"+fullPath.substring(rootPath.length());
 
+        System.out.println("urlPath = " + urlPath);
         // 업로드가 완료되면 데이터베이스에 파일의 경로 위치를 저장
         // ex) /local/2024/06/05/dkfjsldjfkslfjlds_dog.jpg
         return urlPath;
