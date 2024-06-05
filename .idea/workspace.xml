@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 회원가입 - 프로필사진 처리 5">
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 회원가입 - 프로필사진 처리 6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/getReply.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/getReply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/reply.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/reply.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,14 +295,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00028" summary="페이징 렌더링 알고리즘 3 - 이전, 다음 활성화">
-      <option name="closed" value="true" />
-      <created>1716345627391</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1716345627391</updated>
     </task>
     <task id="LOCAL-00029" summary="페이징 렌더링 알고리즘 4 - 맨처음, 맨끝이동, 페이지 액티브 활성화">
       <option name="closed" value="true" />
@@ -687,7 +680,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717569235463</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="# 회원가입 - 프로필사진 처리 6">
+      <option name="closed" value="true" />
+      <created>1717574310868</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1717574310869</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -706,7 +707,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="# 회원가입 클라이언트 아이디 입력검증" />
     <MESSAGE value="# 회원가입 입력값 검증 완료" />
     <MESSAGE value="# 로그인 검증 처리" />
     <MESSAGE value="# 로그인 세션 처리" />
@@ -731,6 +731,7 @@
     <MESSAGE value="# 회원가입 - 프로필사진 처리 3" />
     <MESSAGE value="# 회원가입 - 프로필사진 처리 4" />
     <MESSAGE value="# 회원가입 - 프로필사진 처리 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 회원가입 - 프로필사진 처리 5" />
+    <MESSAGE value="# 회원가입 - 프로필사진 처리 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 회원가입 - 프로필사진 처리 6" />
   </component>
 </project>
