@@ -136,11 +136,14 @@ function appendReplies({ replies, loginUser }) {
   // 댓글 목록 렌더링
   let tag = '';
   if (replies && replies.length > 0) {
-    replies.forEach(({ reply_no: rno, writer, text, createAt, account: replyAccount }) => {
+    replies.forEach(({ reply_no: rno, writer, text, createAt, account: replyAccount, profile }) => {
       tag += `
         <div id='replyContent' class='card-body' data-reply-id='${rno}'>
             <div class='row user-block'>
                 <span class='col-md-3'>
+
+                    <img class='reply-profile' src='${profile ? profile : '/assets/img/anonymous.jpg'}' alt='profile image'>
+
                     <b>${writer}</b>
                 </span>
                 <span class='offset-md-6 col-md-3 text-right'><b>${getRelativeTime(

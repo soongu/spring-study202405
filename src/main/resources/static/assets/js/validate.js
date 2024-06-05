@@ -2,7 +2,7 @@
 
 // 서버에 중복확인 비동기 요청
 export const checkAvailability = async (type, keyword) => {
-  const response = await fetch(`http://localhost:8383/members/check?type=${type}&keyword=${keyword}`);
+  const response = await fetch(`http://172.30.1.9:8383/members/check?type=${type}&keyword=${keyword}`);
   const flag = await response.json();
   return !flag;
 };

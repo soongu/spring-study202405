@@ -31,7 +31,7 @@
                             <tr>
                                 <td>
                                     <input type="text" name="account" id="signInId"
-                                           class="form-control tooltipstered" maxlength="10"
+                                           class="form-control tooltipstered" 
                                            required="required" 
                                            placeholder="최대 10자">
                                 </td>
