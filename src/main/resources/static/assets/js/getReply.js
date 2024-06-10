@@ -221,7 +221,6 @@ export async function fetchInfScrollReplies(pageNo = 1, reset = false) {
     document.getElementById('replyCnt').textContent = totalReplies;
     loadedReplies = 0;
     appendReplies([], true); // 기존 댓글 목록 비우기
-
   }
 
   const spinnerMinTime = 800; // 최소 스피너 표시 시간 (0.8초)

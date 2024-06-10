@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 회원가입 - 프로필사진 처리 6">
+    <list default="true" id="ec3da5f4-95c0-4ce2-96e2-c5d6bdbf9b4b" name="변경" comment="# 무한스크롤 로딩버그 해결">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springstudy/springmvc/chap05/api/SnsLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/getReply.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/getReply.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assets/js/reply.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/assets/js/reply.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members/sign-in.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/members/sign-in.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,14 +298,6 @@
       <updated>1715582906822</updated>
       <workItem from="1716528901753" duration="151000" />
       <workItem from="1716767867006" duration="45000" />
-    </task>
-    <task id="LOCAL-00029" summary="페이징 렌더링 알고리즘 4 - 맨처음, 맨끝이동, 페이지 액티브 활성화">
-      <option name="closed" value="true" />
-      <created>1716349460689</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1716349460689</updated>
     </task>
     <task id="LOCAL-00030" summary="검색 처리 part1 - 제목으로 검색">
       <option name="closed" value="true" />
@@ -688,7 +683,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717574310869</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="# 무한스크롤 로딩버그 해결">
+      <option name="closed" value="true" />
+      <created>1717575374167</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1717575374167</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,7 +710,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="# 회원가입 입력값 검증 완료" />
     <MESSAGE value="# 로그인 검증 처리" />
     <MESSAGE value="# 로그인 세션 처리" />
     <MESSAGE value="# 게시판 인터셉터 만들기" />
@@ -732,6 +734,7 @@
     <MESSAGE value="# 회원가입 - 프로필사진 처리 4" />
     <MESSAGE value="# 회원가입 - 프로필사진 처리 5" />
     <MESSAGE value="# 회원가입 - 프로필사진 처리 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="# 회원가입 - 프로필사진 처리 6" />
+    <MESSAGE value="# 무한스크롤 로딩버그 해결" />
+    <option name="LAST_COMMIT_MESSAGE" value="# 무한스크롤 로딩버그 해결" />
   </component>
 </project>
